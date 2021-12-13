@@ -1,6 +1,6 @@
 
 ectpping : ectpping.c libenetaddr.o libectp.o
-	gcc -lpthread -Wall libenetaddr.o libectp.o ectpping.c -o ectpping
+	gcc -Wall libenetaddr.o libectp.o ectpping.c -o ectpping -lpthread
 
 libenetaddr.o : libenetaddr.h libenetaddr.c
 	gcc -Wall -c libenetaddr.c
